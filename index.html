@@ -1,0 +1,39 @@
+<html>
+<body>
+<style>
+@keyframes moving
+{
+      
+   0% {background-position:0px 0px}
+   50% {background-position:-300px -300px}
+   70% {background-position:-100px -280px}
+   100%  {background-position:800px 500px}  
+}
+
+@keyframes random
+{
+      
+   0% {background-position:200px 0px}
+   50% {background-position:100px 444px}
+   100%  {background-position:400px 100px}  
+}
+#front{width:300px;height:200px;
+      background:url(https://s3.envato.com/files/48474620/Lava_Texture_preview.jpg) red -300px -200px; animation:moving 5s infinite;
+      outline:1px solid rgb(0, 0, 0);}
+#top{width:300px;height:100px;
+     background-color:rgb(255, 255, 255);
+     outline:1px solid rgb(0, 0, 0);
+     transform:skewX(-45deg) translate(50px,0px)}
+#right{background:url(https://thumbs.dreamstime.com/b/water-pool-texture-blue-143546273.jpg)blue 100px 200px; animation:random 10s infinite;
+      height:200px; width:100px; 
+      transform: skewY(-45deg) translate(300px, 50px);
+      outline:1px solid rgb(0, 0, 0);
+      
+}
+</style>
+<div id=top>top</div>
+<div id=front>front</div>
+
+<div id=right>right</div>
+</body>
+</html>
