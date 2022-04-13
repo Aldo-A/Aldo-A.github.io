@@ -93,6 +93,33 @@ document.body.appendChild(dv);
   <li>(6) edit startip.sh or startup.bat, export JAVA_HOME=</li>
   <li>Tomcat hosts web applications, application server, host static files</li>
       <li>(7) visit localhost 8080 in browser</li>
+</ul>
+      
+<h2>4/13/22 Lecture Notes</h2>
+
+<ul>
+  <li>Regular Expression, str.replace(/[0-9]+/g,"");</li>
+  <li>g: all occurences</li>
+  <li>i: case sensitive</li>
+  <li>str.replace(/pattern/gi,"new string"</li>
+  <li>str.replace(/[A-Z]+/gi,"A");</li>
+  <li>+: 1 or more</li>
+  <li>?:0 or 1</li>
+  <li>*: 0 or more</li>
+  <li>^: on being</li>
+  <li>^: second usage, Not</li>
+  <li>task: remove all non digits/li>
+  <li>cardnumber.replace(/[^0-9]/g,"");</li>
+  <li>cardnumber.replace(/[^0-9]/,"");</li>
+  <li>.: means any single char</li>
+  <li>.*: everything</li>
+  <li>(1) delete every following a pattern</li>
+  <li>str.replace(/pattern.*/,'');</li>
+  <li>let username=string.replace(/@.*/,'');</li>
+  <li>let y=username.replace(/[a-b]|0-9|\-\_|\.]/g,"");</li>
+  <li>valid username <===> y == ''</li>
+  <li>let docmainname=string.replace(/[^@]+@/.'');</li>
+  <li>docmainname.replace(/\.io/,''); != docmainname <===> docmainname.contains(".io") < ====> docmainname.includes(".io")</li>
 </ul> 
 
 </body>
